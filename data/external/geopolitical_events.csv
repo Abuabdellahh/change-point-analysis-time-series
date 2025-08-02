@@ -1,0 +1,16 @@
+event_date,event_type,description,impact,source,notes
+2003-03-20,War,Iraq War begins,High,Wikipedia,US-led invasion of Iraq
+2008-09-15,Financial Crisis,Lehman Brothers files for bankruptcy,High,Wikipedia,Global financial crisis
+2014-06-01,OPEC,OPEC maintains production levels despite oil price drop,Medium,News sources,Contributed to oil price collapse
+2016-11-30,OPEC,OPEC agrees to cut production,High,OPEC,First production cut in 8 years
+2020-03-01,Pandemic,COVID-19 pandemic begins,High,WHO,Global demand collapse
+2020-04-20,Market,Oil prices turn negative,High,Market data,WTI futures went negative
+2022-02-24,War,Russia invades Ukraine,High,News sources,Energy market disruptions
+
+# Add more events as needed
+# event_date: Date of the event (YYYY-MM-DD)
+# event_type: Category of event (War, OPEC, Sanctions, etc.)
+# description: Brief description of the event
+# impact: Subjective impact level (High/Medium/Low)
+# source: Source of the information
+# notes: Additional context or notes

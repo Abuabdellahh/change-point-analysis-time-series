@@ -1,0 +1,39 @@
+name: brent-analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - pmdarima
+  - pymc3
+  - arviz
+  - theano-pymc
+  - flask
+  - flask-cors
+  - gunicorn
+  - tqdm
+  - joblib
+  - python-dotenv
+  - jupyter
+  - ipykernel
+  - ipywidgets
+  - plotly
+  - pytest
+  - pytest-cov
+  - black
+  - isort
+  - flake8
+  - mypy
+  - sphinx
+  - sphinx-rtd-theme
+  - nbsphinx
+  - pip
+  - pip:
+    - -r requirements.txt

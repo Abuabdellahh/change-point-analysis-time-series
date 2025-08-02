@@ -1,0 +1,6 @@
+Date,Price
+1987-05-20,18.63
+1987-05-21,18.45
+1987-05-22,18.55
+# ... (add your data here)
+# Format: YYYY-MM-DD,price_value

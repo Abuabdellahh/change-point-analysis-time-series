@@ -1,0 +1,71 @@
+# Project configuration
+project:
+  name: "Brent Oil Price Analysis"
+  description: "Bayesian Change Point Analysis of Brent Crude Oil Prices"
+  author: "Your Name"
+  version: "0.1.0"
+
+# Data paths
+data:
+  raw: "data/raw/brent_prices.csv"
+  processed: "data/processed/processed_data.parquet"
+  events: "data/external/geopolitical_events.csv"
+  results: "data/processed/results.parquet"
+
+# Model parameters
+model:
+  n_changepoints: 5
+  change_type: "both"  # 'mean', 'volatility', or 'both'
+  model_type: "normal"  # 'normal', 'studentt', or 'laplace'
+  
+  # MCMC parameters
+  tune: 2000
+  draws: 2000
+  chains: 2
+  target_accept: 0.9
+  
+  # Threshold for change point detection
+  cp_threshold: 0.5
+
+# Dashboard settings
+dashboard:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true
+  
+# Visualization settings
+visualization:
+  # Colors
+  colors:
+    primary: "#1f77b4"
+    secondary: "#ff7f0e"
+    change_point: "#d62728"
+    background: "#f8f9fa"
+    grid: "#e9ecef"
+  
+  # Plot styles
+  style: "seaborn"
+  context: "notebook"
+  palette: "colorblind"
+  
+  # Figure sizes
+  figure_sizes:
+    small: [8, 4]
+    medium: [12, 6]
+    large: [16, 8]
+
+# Logging settings
+logging:
+  level: "INFO"
+  file: "logs/analysis.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# External APIs (if any)
+apis:
+  fred:
+    base_url: "https://api.stlouisfed.org/fred"
+    api_key: "your_api_key_here"
+  
+  quandl:
+    base_url: "https://www.quandl.com/api/v3"
+    api_key: "your_api_key_here"
